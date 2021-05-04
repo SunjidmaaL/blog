@@ -57,7 +57,7 @@ export default function Home() {
                     />
                     <div>
                       <Card.Title className="font-weight-bold mb-1">
-                        Амар Өсөхбаяр
+                        Лхагвадорж Сүнжидмаа
                       </Card.Title>
                       <Card.Text className="card-date">
                         2021 оны 3 сарын 21
@@ -87,7 +87,7 @@ export default function Home() {
                     />
                     <div>
                       <Card.Title className="font-weight-bold mb-1">
-                        Амар Өсөхбаяр
+                        Лхагвадорж Сүнжидмаа
                       </Card.Title>
                       <Card.Text className="card-date">
                         2021 оны 3 сарын 2
@@ -123,7 +123,7 @@ export default function Home() {
                     />
                     <div>
                       <Card.Title className="font-weight-bold mb-1">
-                        Амар Өсөхбаяр
+                        Лхагвадорж Сүнжидмаа
                       </Card.Title>
                       <Card.Text className="card-date">
                         2021 оны 3 сарын 2
@@ -159,7 +159,7 @@ export default function Home() {
                     />
                     <div>
                       <Card.Title className="font-weight-bold mb-1">
-                        Амар Өсөхбаяр
+                        Лхагвадорж Сүнжидмаа
                       </Card.Title>
                       <Card.Text className="card-date">
                         2021 оны 3 сарын 2
