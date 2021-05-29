@@ -2,6 +2,7 @@ import "styles/index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "highlight.js/styles/agate.css";
 import useSWR, { SWRConfig } from 'swr';
+import { ThemeProvider } from "context/theme-context";
 
 const fetcher = async url => {
   const res = await fetch(url)
@@ -24,10 +25,21 @@ function MyApp({ Component, pageProps }) {
   value={{
     refreshInterval: 3000,
     fetcher,
+    onError: (error, key) => {
+      if (error.status !== 403 && error.status !== 404) {
+        // We can send the error to Sentry,
+        // or show a notification UI.
+        //alert("Алдаа");
+      }
+    }
+  
   }}
->
-  <Component {...pageProps} />;
+> 
+  <ThemeProvider>
+    <Component {...pageProps} />
+  </ThemeProvider>
   </SWRConfig>
-}
+  
+};
 
 export default MyApp;
